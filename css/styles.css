@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Rubik:300,400,500');
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #001033;
+    margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.constraint { 
+  margin: 0 auto;
+  max-width: 67em;
+}
+
+.form-wrapper {
+  padding: 2em;
+  background: #F0F0F0;
+}
+
+form {
+  background: #FFF;
+  padding: 1em;
+  border: 1px solid #CCC;
+}
+
+.grid {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.req {
+  color: #ec1b34;
+}
+
+.form-item {
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex: 1 2 40%;
+}
+
+.form-item:nth-of-type(even) {
+  margin-right: 0;
+}
+
+.form-item label {
+  display: block;
+  margin: .5em 0;
+  font-weight: bold;
+}
+
+.form-item input[type="text"], .form-item select {
+  padding: .5em;
+}
+
+.radio-container {  
+  flex-direction: row;
+}
+
+.radio-group {
+  margin-right: 1em;
+}
+
+#form input[type="submit"], button {
+  cursor: pointer;
+  margin: 1em 0;
+  padding: .5em;
+  font-size: 1em;
+  width: 100px;
+  color: #FFF;
+  background: #1e8449;
+  border-style: none;
+  border-radius: 10px;
+}
+
+#form input[type="submit"]:hover, #form input[type="submit"]:focus {
+  background: #19703e;
+  transition: .5s;
+}
+
+#delete-all {
+  background: #888;
+}
+
+#delete-all:hover, #delete-all:focus  {
+  background: #626262;
+}
+
+.car-list-wrapper {
+  padding: 2em 2em 4em;
+  background: #FFF;
+  border-bottom: 2em solid #F0F0F0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.list-item {
+  background: #F0F0F0;
+  padding: 1em;
+  margin: 1em;
+  flex: 40%;
+  border-radius: 10px;
+  border: 1px solid #CCC;
+}
+
+.list-item:hover, .list-item:focus {
+  -webkit-transform: scale3d(1.025, 1.025, 1.025);
+  transform: scale3d(1.025, 1.025, 1.025);
+}

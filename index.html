@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car List App</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <div class="constraint">
+        <h1>Form</h1>
+        <form id="form">
+          <div id="form-wrapper" class="grid">
+            <div class="form-item">
+              <label for="make" class="primary">Make <span class="req">*</span></label>
+              <input type="text" id="make" required/>
+            </div>
+
+            <div class="form-item">
+              <label for="model" class="primary">Model <span class="req">*</span></label>
+              <input type="text" id="model" required/>
+            </div>
+
+            <div class="form-item">
+              <label for="fuel" class="primary">Fuel Type</label>
+              <select id="fuel">
+                <option value="" disabled selected></option>
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Electric">Electric</option>
+                <option value="Hybrid">Hybrid</option>
+              </select>
+            </div>
+
+            <div class="form-item radio-container">
+              <div class="radio-group">
+                <label for="new" class="primary">New</label>
+                <input type="radio" name="new-used" id="new" value="New"/>
+              </div>
+              <div class="radio-group">
+                <label for="used" class="primary">Used</label>
+                <input type="radio" name="new-used" id="used" value="Used"/>
+              </div>
+            </div>
+          </div>
+          <input type="submit" value="Save"/>
+          <button id="delete-all">Delete All</button>
+        </form>
+      </div><!-- .constraint -->
+    </div><!-- .form-wrapper -->
+
+    <div class="car-list-wrapper">
+      <div class="constraint">
+        <h1>Car List</h1>
+        <ul id="car-list">
+
+        </ul>
+      </div><!-- .constraint -->
+    </div><!-- .car-list-wrapper -->
+  </body>
+</html>
